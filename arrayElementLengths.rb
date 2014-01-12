@@ -22,6 +22,8 @@ students = [
 nameL = 0
 cohortL = 0
 
+# there has to be a better way of doing this!
+
 students.each do |student|
    if student[:name].length > nameL then 
       nameL = student[:name].length
@@ -31,4 +33,4 @@ students.each do |student|
    end 
 end
 
-puts "#{nameL} #{cohortL}" 
+puts "First try: #{nameL} #{cohortL}" 
